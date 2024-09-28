@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    flex-direction: column;
+}
+
+.game-board {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease; /* Added transition for pop-out effect */
+}
+
+.game-board:hover {
+    transform: scale(1.05); /* Pop-out effect on hover */
+}
+
+.row {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.feedback {
+    display: flex;
+    margin-left: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+    width: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.black-dot {
+    background-color: black;
+}
+
+.grey-dot {
+    background-color: grey;
+}
+
+.end-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    display: none;
+}
+
+.code-display {
+    display: flex;
+    margin-top: 20px;
+}
+
+.code-color {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border: 1px solid #fff;
+}
+
+.new-game, .check-guess, #quitButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#quitButton {
+    background-color: #dc3545;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
